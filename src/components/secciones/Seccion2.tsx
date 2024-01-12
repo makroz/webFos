@@ -20,8 +20,11 @@ export default function Seccion2() {
         <div className="flex justify-center items-center w-full">
           <Reveal>
             <div className="flex desktopK:block gap-7 bg-black-50 py-7 desktop:py-10 px-8 items-center">
-              <IconUno viewBox="0 0 26 29" size={27} />
-              <p className="text-tGrey text-left  text-xs w-[75%] font-monse">
+              <IconUno
+                viewBox="0 0 26 29"
+                className="w-[27px] h-[27px] desktopK:w-[70px] desktopK:h-[70px] desktopK:mx-auto"
+              />
+              <p className="text-tGrey text-left  text-xs w-[75%] font-monse desktopK:text-center desktopK:w-full desktopK:text-base desktopK:pt-6">
                 Una visión diferente acerca de cómo solucionar con tecnología o
                 desarrollo el problema que tienen.
               </p>
@@ -31,8 +34,11 @@ export default function Seccion2() {
         <div className="flex justify-center items-center w-full">
           <Reveal>
             <div className="flex desktopK:block gap-7 bg-black-50 py-7 desktop:py-10 px-8 items-center ">
-              <IconDos viewBox="0 0 31 29" size={27} />
-              <p className="text-tGrey text-left  text-xs w-[75%] font-monse">
+              <IconDos
+                viewBox="0 0 31 29"
+                className="w-[27px] h-[27px] desktopK:w-[70px] desktopK:h-[70px] desktopK:mx-auto"
+              />
+              <p className="text-tGrey text-left  text-xs w-[75%] font-monse desktopK:text-center desktopK:w-full desktopK:text-base desktopK:pt-6">
                 Una visión diferente acerca de cómo solucionar con tecnología o
                 desarrollo el problema que tienen.
               </p>
@@ -42,8 +48,11 @@ export default function Seccion2() {
         <div className="flex justify-center items-center w-full">
           <Reveal>
             <div className="flex desktopK:block gap-7 bg-black-50 py-7 desktop:py-10 px-8 items-center ">
-              <IconTres viewBox="0 0 31 29" size={27} />
-              <p className="text-tGrey text-left text-xs w-[75%] font-monse">
+              <IconTres
+                viewBox="0 0 31 29"
+                className="w-[27px] h-[27px] desktopK:w-[70px] desktopK:h-[70px] desktopK:mx-auto"
+              />
+              <p className="text-tGrey text-left text-xs w-[75%] font-monse desktopK:text-center desktopK:w-full desktopK:text-base desktopK:pt-6">
                 Una visión diferente acerca de cómo solucionar con tecnología o
                 desarrollo el problema que tienen.
               </p>
@@ -62,10 +71,10 @@ export default function Seccion2() {
             </div>
             <div className="px-10 tablet:flex justify-center items-center">
               <div>
-                <h1 className="font-bold text-xl tablet:text-5xl text-center tablet:text-left text-tBlack font-monse">
+                <h1 className="font-bold text-xl tablet:text-4xl desktopK:text-5xl text-center tablet:text-left text-tBlack font-monse">
                   Condaty
                 </h1>
-                <p className="text-center font-bold tablet:font-normal text-tBlack tablet:text-tGrey font-monse ">
+                <p className="text-center font-bold tablet:font-normal text-tBlack tablet:text-tGrey desktopK:text-lg font-monse ">
                   Software de gestión de condominios y edificios
                 </p>
                 {/* <p className="text-center text-tGrey">

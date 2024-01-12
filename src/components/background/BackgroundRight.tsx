@@ -7,22 +7,22 @@ import {
 } from "@/src/icons/IconsLibrary";
 
 export function BackgroundRight() {
-  const [iconSize, setIconSize] = useState(360);
+  // const [iconSize, setIconSize] = useState(360);
 
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      const newSize = window.innerWidth > 1024 ? 780 : 360;
-      setIconSize(newSize);
-    };
+  // useLayoutEffect(() => {
+  //   const handleResize = () => {
+  //     const newSize = window.innerWidth > 1024 ? 780 : 360;
+  //     setIconSize(newSize);
+  //   };
 
-    handleResize();
+  //   handleResize();
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
   return (
     <div className="absolute right-0 -z-50 top-0">
       {/* <Image
@@ -31,7 +31,10 @@ export function BackgroundRight() {
         height={1900}
         alt="Image fos"
       /> */}
-      <IconBackgroundRight size={iconSize} viewBox="0 0 430 379" />
+      <IconBackgroundRight
+        className="w-[360px] h-[360px] desktop:w-[500px] desktop:h-[500px]  desktopK:w-[780px] desktopK:h-[780px] "
+        viewBox="0 0 430 379"
+      />
       {/* <Image src={background} alt="Image fos" /> */}
     </div>
   );

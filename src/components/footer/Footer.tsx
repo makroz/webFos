@@ -15,35 +15,59 @@ export const Footer = () => {
         <div className="tablet:flex space-y-6 tablet:space-y-0 tablet:pb-20 justify-between">
           <div className="flex flex-col gap-2">
             <p className="font-monse text-tWhite">Información</p>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Acerca de nosotros
             </a>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Productos
             </a>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Precios
             </a>
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-tWhite font-monse">Legal</p>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Términos y condiciones
             </a>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Políticas de privacidad
             </a>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Información del Copyright
             </a>
           </div>
 
           <div className="flex flex-col gap-2">
             <p className="text-tWhite font-monse">Soporte</p>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Preguntas frecuentes
             </a>
-            <a href="" className="text-tGrey font-light font-monse">
+            <a
+              href=""
+              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+            >
               Contactar
             </a>
           </div>
@@ -51,16 +75,35 @@ export const Footer = () => {
           <div className="flex flex-col gap-2">
             <p className="text-tWhite font-monse">Redes sociales</p>
             <div className="flex gap-4">
-              <a className="bg-black-50 p-2">
+              <a
+                href="https://www.facebook.com/profile.php?id=100095684375403"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black-50 p-2"
+              >
                 <IconFacebook />
               </a>
-              <a className="bg-black-50 p-2">
+              <a
+                href="https://www.instagram.com/fos.technologies/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black-50 p-2"
+              >
                 <IconInstagram />
               </a>
-              <a className="bg-black-50 p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black-50 p-2 hidden"
+              >
                 <IconTwitter />
               </a>
-              <a className="bg-black-50 p-2">
+              <a
+                href="https://www.linkedin.com/company/fos-technologies/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black-50 p-2"
+              >
                 <IconLinkedin />
               </a>
             </div>

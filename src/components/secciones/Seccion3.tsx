@@ -16,7 +16,7 @@ export default function Seccion3() {
           <Image
             src={equipo}
             alt="Imagen equipo"
-            className="w-[100%] py-4 laptop:w-[790px] desktop:w-[48.5%] desktopK:w-[800px]"
+            className="w-[100%] py-4 laptop:w-[790px] desktop:w-[48.5%] desktopK:w-[48.5%]"
           />
           {/* <div className="tablet:flex tablet:hidden">
             <div className="flex justify-center items-center">

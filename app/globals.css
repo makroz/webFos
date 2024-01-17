@@ -16,6 +16,17 @@ label {
   position: relative;
   display: inline-block;
 }
+@media (min-width: 2560px) {
+  label {
+    margin: 16px 0;
+  }
+}
+.degradau {
+  background: var(
+    --GRadient-CTA,
+    linear-gradient(90deg, #f25749 -15.09%, #5945a7 150.09%)
+  );
+}
 
 span {
   padding: 10px;
@@ -30,6 +41,12 @@ span {
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0.5;
 }
+@media (min-width: 2560px) {
+  span {
+    padding: 19px;
+    font-size: 22px;
+  }
+}
 
 input {
   padding: 10px;
@@ -37,6 +54,12 @@ input {
   background-color: black;
   font-family: "Montserrat";
   color: white;
+}
+@media (min-width: 2560px) {
+  input {
+    padding: 20px;
+    font-size: 22px;
+  }
 }
 textarea {
   border: 1px solid #999;

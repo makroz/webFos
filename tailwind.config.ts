@@ -29,6 +29,9 @@ const config: Config = {
       },
       backgroundColor: {
         "black-50": "rgba(27, 27, 27, 0.50)",
+        // "black-50-opacidad": "rgba(27, 27, 27, 0.50)",
+        // "gradient-cta":
+        //   "linear-gradient(90deg, #F25749 -15.09%, #5945A7 150.09%)",
       },
 
       screens: {

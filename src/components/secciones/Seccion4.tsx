@@ -59,7 +59,7 @@ export default function Seccion4() {
               value={formState["descrip"]}
               onChange={handleChangeInput}
             />
-            <button className="bg-gradient-to-r from-custom-orange to-custom-purple w-full py-2 desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse">
+            <button className="bg-gradient-to-r from-custom-orange to-custom-purple w-full py-2 desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse ">
               Enviar mensaje
             </button>
           </div>

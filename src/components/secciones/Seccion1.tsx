@@ -22,7 +22,7 @@ export default function Seccion1() {
         </Transition>
         <Transition>
           <div className="w-full flex justify-center desktopK:my-12">
-            <button className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-3 px-8 text-tWhite font-medium font-monse">
+            <button className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-3 px-8 text-tWhite font-medium font-monse ">
               Hablemos
             </button>
           </div>

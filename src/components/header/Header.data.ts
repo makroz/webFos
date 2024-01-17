@@ -2,26 +2,26 @@ export const dataHeader = [
   {
     id: 1,
     name: "Productos",
-    idLink: "#productos",
+    idLink: "/#productos",
   },
   {
     id: 2,
     name: "Conócenos",
-    idLink: "#conocenos",
+    idLink: "/#conocenos",
   },
   {
     id: 3,
     name: "Blog",
-    idLink: "#blog",
+    idLink: "/blog",
   },
   {
     id: 4,
     name: "Contáctanos",
-    idLink: "#contactanos",
+    idLink: "/#contactanos",
   },
   {
     id: 5,
     name: "Únete a nuestro equipo",
-    idLink: "#unete",
+    idLink: "/unete-al-equipo",
   },
 ];

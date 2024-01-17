@@ -2,14 +2,20 @@
 import { IconLogo, IconMenu } from "../../icons/IconsLibrary";
 import Link from "next/link";
 import { dataHeader } from "./Header.data";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { Transition } from "../transition/Transition";
-import { useRouter } from "next/router";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   const [iconSize, setIconSize] = useState(48);
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setActiveLink(pathname);
+  }, [pathname]);
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -50,7 +56,7 @@ export const Header = () => {
             openMenu ? "block" : "hidden"
           } w-full tablet:block tablet:w-auto`}
         >
-          <div className="flex flex-col p-4  mt-4 tablet:p-0 gap-4 tablet:flex-row tablet:space-x-4 tablet:mt-0 tablet:border-0 bg-[#1B1B1B] tablet:bg-transparent absolute tablet:relative z-10 w-[90%] tablet:w-auto">
+          <div className="flex flex-col p-4  mt-4 tablet:p-0 gap-4 tablet:flex-row tablet:space-x-2 tablet:mt-0 tablet:border-0 bg-[#1B1B1B] tablet:bg-transparent absolute tablet:relative z-10 w-[90%] tablet:w-auto">
             {dataHeader.map(({ id, name, idLink }) => (
               <div
                 key={id}

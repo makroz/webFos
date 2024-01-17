@@ -17,21 +17,21 @@ export const Header = () => {
     setActiveLink(pathname);
   }, [pathname]);
 
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      const newSize =
-        window.innerWidth > 1023 ? 111 : window.innerWidth > 640 ? 79 : 48;
-      setIconSize(newSize);
-    };
+  // useLayoutEffect(() => {
+  //   const handleResize = () => {
+  //     const newSize =
+  //       window.innerWidth > 1023 ? 111 : window.innerWidth > 640 ? 79 : 48;
+  //     setIconSize(newSize);
+  //   };
 
-    handleResize();
+  //   handleResize();
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   const handleLinkClick = (idLink: any) => {
     setActiveLink(idLink);
@@ -40,11 +40,11 @@ export const Header = () => {
   return (
     <Transition>
       <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto tablet:p-8 desktop:py-2 bg-transparent">
-        <Link href={"/"} className="flex items-center">
+        <Link href={"/"} className="flex items-center hover:animate-pulse">
           <IconLogo
             viewBox="0 0 48 28"
-            size={iconSize}
-            // className=" tablet:w-16 laptop:w-80"
+            //size={iconSize}
+            className="w-[48px] h-[48px] tablet:w-[79px] tablet:h-[79px] laptop:w-[120px] laptop:h-[120px]"
           />
         </Link>
         <IconMenu
@@ -66,7 +66,7 @@ export const Header = () => {
                   href={idLink}
                   className={`text-lg font-light font-monse tablet:text-sm laptop:text-base ${
                     activeLink === idLink
-                      ? "bg-black-50 text-tWhite p-2"
+                      ? "bg-black-50 text-tWhite p-2 "
                       : "text-tWhite hover:bg-black-50 p-2"
                   }`}
                   onClick={() => handleLinkClick(idLink)}

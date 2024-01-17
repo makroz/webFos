@@ -86,7 +86,7 @@ export default function Seccion2() {
                     href="https://www.condaty.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-2 px-6 text-tWhite font-medium font-monse"
+                    className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-2 px-6 text-tWhite font-medium font-monse "
                   >
                     Conoce Condaty
                   </a>

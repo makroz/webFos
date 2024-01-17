@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   background-color: black;
 }
@@ -18,7 +19,7 @@ label {
 }
 @media (min-width: 2560px) {
   label {
-    margin: 16px 0;
+    margin: 20px 0;
   }
 }
 .degradau {

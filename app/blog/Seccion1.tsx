@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Blog from "@/public/blog.png";
+import Blog from "@/public/blog.webp";
 import { Transition } from "@/src/components/transition/Transition";
 import { Reveal } from "@/src/components/reveal/Reveal";
 

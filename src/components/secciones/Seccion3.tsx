@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import equipo from "@/public/equipo.png";
-import ImageBrenda from "@/public/fotoBrenda.png";
+import equipo from "@/public/equipo.webp";
+import ImageBrenda from "@/public/fotoBrenda.webp";
 import Slide from "../Slide";
 import Redondo from "@/src/redondo/Redondo";
 

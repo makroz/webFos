@@ -28,7 +28,7 @@ export const equipo = [
   },
   {
     id: 3,
-    name: "Mario Alberto Guzman Mensoza",
+    name: "Mario Alberto Guzmán Mendoza",
     cargo: "CTO",
     descrip:
       "dsgdsgdsgsdgsdgdsgdgsgsgsdgsdgdsgsdgsdgsdgsg sdgsdgdsgdssdsddsdsg",

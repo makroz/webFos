@@ -35,7 +35,7 @@ export default function Seccion4() {
     }
     let regexEmail = /\S+@\S+\.\S+/;
     if (!regexEmail.test(formState.email)) {
-      setError("El correo electónico no es valido");
+      setError("El correo electrónico no es valido");
       return;
     }
     if (!formState.phone) {

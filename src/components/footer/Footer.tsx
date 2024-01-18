@@ -17,19 +17,19 @@ export const Footer = () => {
             <p className="font-monse text-tWhite">Información</p>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Acerca de nosotros
             </a>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Productos
             </a>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Precios
             </a>
@@ -38,19 +38,19 @@ export const Footer = () => {
             <p className="text-tWhite font-monse">Legal</p>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Términos y condiciones
             </a>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Políticas de privacidad
             </a>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Información del Copyright
             </a>
@@ -60,13 +60,13 @@ export const Footer = () => {
             <p className="text-tWhite font-monse">Soporte</p>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Preguntas frecuentes
             </a>
             <a
               href=""
-              className="text-tGrey font-light font-monse hover:underline hover:text-blue-500"
+              className="text-tGrey font-light font-monse hover:underline hover:text-tFos"
             >
               Contactar
             </a>

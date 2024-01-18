@@ -1,17 +1,108 @@
 import Input from "@/src/ui/Input";
 import TextArea from "@/src/ui/TextArea";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Transition } from "../transition/Transition";
+import axios from "axios";
+import { Error } from "../error/Error";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Seccion4() {
+  // type:"FOS"
   const [formState, setFormState]: any = useState({});
+  const [loading, setLoading] = useState(false);
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const [error, setError] = useState("");
+  const notify = () => toast("Wow so easy!");
   const handleChangeInput = (e: any) => {
     let value = e.target.value;
     setFormState({ ...formState, [e.target.name]: value });
   };
 
+  const save = async () => {
+    if (!formState.name) {
+      setError("El nombre es un campo requerido");
+      return;
+    }
+    let regexTexto = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s',.-]+$/;
+    if (!regexTexto.test(formState.name)) {
+      setError("El nombre no es valido");
+      return;
+    }
+    if (!formState.email) {
+      setError("El correo electónico es un campo requerido");
+      return;
+    }
+    let regexEmail = /\S+@\S+\.\S+/;
+    if (!regexEmail.test(formState.email)) {
+      setError("El correo electónico no es valido");
+      return;
+    }
+    if (!formState.phone) {
+      setError("El celular es un campo requerido");
+      return;
+    }
+    let regexPhone = /^[3-9]\d{0,15}$|^10$|^1[0-5]\d{0,8}$/g;
+    if (!regexPhone.test(formState.phone)) {
+      setError("El celular no es valido");
+      return;
+    }
+    if (!formState.condominium) {
+      setError("El rubro es un campo requerido");
+      return;
+    }
+    if (!formState.message) {
+      setError("Nesecitamos que cuente su proyecto o necesidad");
+      return;
+    }
+    setLoading(!loading);
+    axios.defaults.headers.post["Content-Type"] =
+      "application/json;charset=utf-8";
+    axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+    axios.defaults.headers.post["Access-Control-Allow-Headers"] =
+      "Origin, X-Requested-With, Content-Type, Accept";
+    axios.defaults.headers.post["Access-Control-Allow-Methods"] =
+      "GET, POST, PUT, DELETE, OPTIONS";
+    axios.defaults.headers.post["Access-Control-Allow-Credentials"] = "true";
+    axios.defaults.headers.post["Access-Control-Max-Age"] = "86400";
+    axios.defaults.headers.post["Access-Control-Expose-Headers"] =
+      "Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type";
+    axios
+      .post(`${apiUrl}/webpage`, { ...formState, type: "FOS" })
+      .then((response) => {
+        console.log("200", response.data);
+        setLoading(false);
+        setFormState({});
+
+        toast.success("¡Mensaje enviado con éxito! 🚀", {
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
+  };
+  const dismissError = () => {
+    setError("");
+  };
+
+  useEffect(() => {
+    if (error) {
+      const timeoutId = setTimeout(dismissError, 4000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [error]);
+
   return (
     <div className="relative fullScreen" id="contactanos">
+      <ToastContainer />
       <div className="mx-[3%] pt-6 desktop:mx-[26%] ">
         <Transition>
           <h1 className="text-center my-5 text-tWhite text-4xl font-bold font-monse">
@@ -23,7 +114,8 @@ export default function Seccion4() {
             y reducir los gastos comunes a través de nuestro sistema para
             administrar edificios y condominios.
           </p>
-          <div className="mt-8">
+          {error && <Error>{error}</Error>}
+          <div className={`${error ? "mt-0" : "mt-4"}`}>
             <Input
               name="name"
               type="text"
@@ -41,25 +133,33 @@ export default function Seccion4() {
             <Input
               name="phone"
               type="number"
-              placeholder="Teléfono"
+              placeholder="Celular"
               value={formState["phone"]}
               onChange={handleChangeInput}
             />
             <Input
-              name="rubro"
+              name="condominium"
               type="text"
               placeholder="Rubro de tu empresa"
-              value={formState["rubro"]}
+              value={formState["condominium"]}
               onChange={handleChangeInput}
             />
             <TextArea
-              name="descrip"
+              name="message"
               type="text"
               placeholder="Cuéntanos de tu proyecto o necesidad"
-              value={formState["descrip"]}
+              value={formState["message"]}
               onChange={handleChangeInput}
             />
-            <button className="bg-gradient-to-r from-custom-orange to-custom-purple w-full py-2 desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse ">
+            <button
+              onClick={() => save()}
+              disabled={loading}
+              className={`w-full py-2 ${
+                loading
+                  ? "bg-tGrey"
+                  : "bg-gradient-to-r from-custom-orange to-custom-purple"
+              } desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse`}
+            >
               Enviar mensaje
             </button>
           </div>

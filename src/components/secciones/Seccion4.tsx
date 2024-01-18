@@ -110,7 +110,7 @@ export default function Seccion4() {
   return (
     <div className="relative fullScreen" id="contactanos">
       <ToastContainer />
-      <div className="mx-[3%] pt-6 desktop:mx-[26%] ">
+      <div className="mx-[3%] absolute left-0 right-0 top-0 bottom-0 desktop:mx-[26%] flex justify-center items-center">
         <Transition>
           <h1 className="text-center my-5 text-tWhite text-4xl font-bold font-monse">
             Contáctanos

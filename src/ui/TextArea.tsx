@@ -13,7 +13,7 @@ const TextArea = (props: any) => {
         readOnly={props.readOnly}
         onChange={props.onChange}
         onBlur={props.onBlur}
-        value={props.value}
+        value={props.value || ""}
         rows={4}
       />
       <span>{props.placeholder}</span>

@@ -9,7 +9,7 @@ export default function Seccion1() {
       <Redondo />
       <div className="flex-row space-y-4 py-8">
         <Transition>
-          <h1 className="text-tWhite font-monse text-center text-2xl tablet:text-3xl desktopK:text-5xl font-bold px-16">
+          <h1 className="text-tWhite font-monse text-center text-xl tablet:text-3xl desktopK:text-5xl font-bold px-16">
             Desarrollo de software a tu medida
           </h1>
         </Transition>
@@ -30,7 +30,7 @@ export default function Seccion1() {
       </div>
       <div className="flex-row space-y-4 ">
         <Transition>
-          <h1 className="text-tWhite text-center text-2xl tablet:text-3xl desktopK:text-5xl font-bold px-[50px] font-monse">
+          <h1 className="text-tWhite text-center text-xl tablet:text-3xl desktopK:text-5xl font-bold px-[50px] font-monse">
             Sé parte de la revolución tecnológica
           </h1>
         </Transition>
@@ -40,11 +40,11 @@ export default function Seccion1() {
             huella en el mundo
           </p>
         </Transition>
-        <div className="w-full flex justify-center absolute bottom-0 ">
+        <div className="w-full flex justify-center  ">
           <Transition>
             <video
               controls
-              className="w-300 tablet:w-[600px] laptop:w[900px] desktop:w-[950px] desktopK:w-[1120px]"
+              className="w-300 tablet:w-[600px] laptop:w-[800px]  desktopK:w-[1120px]"
             ></video>
           </Transition>
         </div>

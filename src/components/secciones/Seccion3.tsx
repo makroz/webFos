@@ -8,17 +8,18 @@ import Redondo from "@/src/redondo/Redondo";
 export default function Seccion3() {
   return (
     <div className="relative fullScreen " id="conocenos">
-      <div className="pt-14 desktop:py-6">
-        <h1 className="text-tWhite text-center text-2xl tablet:text-3xl font-bold px-10 font-monse">
-          Conoce cada talento del equipo
-        </h1>
-        <div className="w-full px-4 py-14 tablet:py-0 laptop:flex laptop:justify-center">
-          <Image
-            src={equipo}
-            alt="Imagen equipo"
-            className="w-[100%] py-4 laptop:w-[790px] desktop:w-[48.5%] desktopK:w-[47%]"
-          />
-          {/* <div className="tablet:flex tablet:hidden">
+      <div className="flex absolute left-0 right-0 top-0 bottom-0 justify-center items-center">
+        <div className="w-full">
+          <h1 className="text-tWhite text-center text-2xl tablet:text-3xl font-bold px-10 font-monse">
+            Conoce cada talento del equipo
+          </h1>
+          <div className="w-full px-4 py-14 tablet:py-0 laptop:flex laptop:justify-center">
+            <Image
+              src={equipo}
+              alt="Imagen equipo"
+              className="w-[100%] py-4 laptop:w-[790px] desktop:w-[48.5%] desktopK:w-[47%]"
+            />
+            {/* <div className="tablet:flex tablet:hidden">
             <div className="flex justify-center items-center">
               <Image
                 src={ImageBrenda}
@@ -40,9 +41,9 @@ export default function Seccion3() {
               </p>
             </div>
           </div> */}
+          </div>
+          <Slide />
         </div>
-
-        <Slide />
       </div>
     </div>
   );

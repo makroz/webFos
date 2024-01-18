@@ -44,7 +44,7 @@ export default function Seccion1() {
           <Transition>
             <video
               controls
-              className="w-300 tablet:w-[600px] laptop:w[900px] desktopK:w-[1120px]"
+              className="w-300 tablet:w-[600px] laptop:w[900px] desktop:w-[950px] desktopK:w-[1120px]"
             ></video>
           </Transition>
         </div>

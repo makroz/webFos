@@ -40,7 +40,7 @@ export default function Seccion1() {
             huella en el mundo
           </p>
         </Transition>
-        <div className="w-full flex justify-center ">
+        <div className="w-full flex justify-center absolute bottom-0 ">
           <Transition>
             <video
               controls

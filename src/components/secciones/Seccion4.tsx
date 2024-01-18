@@ -70,7 +70,6 @@ export default function Seccion4() {
     axios
       .post(`${apiUrl}/webpage`, { ...formState, type: "FOS" })
       .then((response) => {
-        console.log("200", response.data);
         setLoading(false);
         setFormState({});
 
@@ -86,6 +85,14 @@ export default function Seccion4() {
       .catch((error) => {
         console.error("Error:", error);
         setLoading(false);
+        toast.error("Ocurrio un error", {
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
   };
   const dismissError = () => {

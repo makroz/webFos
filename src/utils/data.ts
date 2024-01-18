@@ -1,14 +1,14 @@
-import ImagenDouglas from "@/public/imagenDouglas.png";
-import ImagenBrenda from "@/public/imagenBrenda.png";
-import ImagenSebastian from "@/public/imagenSebastian.png";
-import ImagenSantiago from "@/public/imagenSantiago.png";
-import ImagenDamian from "@/public/imagenDamian.png";
-import ImagenCristian from "@/public/imagenCristian.png";
-import ImagenKaren from "@/public/imagenKaren.png";
-import ImagenMario from "@/public/imagenMario.png";
-import ImagenJoseca from "@/public/imagenJoseca.png";
-import ImagenAlexi from "@/public/imagenAlexi.png";
-import ImagenMiguel from "@/public/imagenMiguel.png";
+import ImagenDouglas from "@/public/imagenDouglas.webp";
+import ImagenBrenda from "@/public/imagenBrenda.webp";
+import ImagenSebastian from "@/public/imagenSebastian.webp";
+import ImagenSantiago from "@/public/imagenSantiago.webp";
+import ImagenDamian from "@/public/imagenDamian.webp";
+import ImagenCristian from "@/public/imagenCristian.webp";
+import ImagenKaren from "@/public/imagenKaren.webp";
+import ImagenMario from "@/public/imagenMario.webp";
+import ImagenJoseca from "@/public/imagenJoseca.webp";
+import ImagenAlexi from "@/public/imagenAlexi.webp";
+import ImagenMiguel from "@/public/imagenMiguel.webp";
 export const equipo = [
   {
     id: 1,

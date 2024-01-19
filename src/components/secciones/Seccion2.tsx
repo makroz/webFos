@@ -20,7 +20,7 @@ export default function Seccion2() {
               </h1>
             </Transition>
             <div className="flex justify-center items-center w-full">
-              <div className="desktop:max-w-[50%] laptop:max-w-[80%] desktopK:max-w-[40%]">
+              <div className="desktop:max-w-[45%] laptop:max-w-[80%] desktopK:max-w-[40%]">
                 <Reveal>
                   <div className="flex desktopK:block gap-7 bg-black-50 py-4 desktop:py-10 px-8 items-center">
                     <IconUno
@@ -37,7 +37,7 @@ export default function Seccion2() {
               </div>
             </div>
             <div className="flex justify-center items-center w-full">
-              <div className="desktop:max-w-[50%] laptop:max-w-[80%] desktopK:max-w-[40%]">
+              <div className="desktop:max-w-[45%] laptop:max-w-[80%] desktopK:max-w-[40%]">
                 <Reveal>
                   <div className="flex desktopK:block gap-7 bg-black-50 py-4 desktop:py-10 px-8 items-center ">
                     <IconDos
@@ -54,7 +54,7 @@ export default function Seccion2() {
               </div>
             </div>
             <div className="flex justify-center items-center w-full">
-              <div className="desktop:max-w-[50%] laptop:max-w-[80%] desktopK:max-w-[40%]">
+              <div className="desktop:max-w-[45%] laptop:max-w-[80%] desktopK:max-w-[40%]">
                 <Reveal>
                   <div className="flex desktopK:block gap-7 bg-black-50 py-4 desktop:py-10 px-8 items-center ">
                     <IconTres

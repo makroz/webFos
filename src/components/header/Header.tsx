@@ -17,22 +17,6 @@ export const Header = () => {
     setActiveLink(pathname);
   }, [pathname]);
 
-  // useLayoutEffect(() => {
-  //   const handleResize = () => {
-  //     const newSize =
-  //       window.innerWidth > 1023 ? 111 : window.innerWidth > 640 ? 79 : 48;
-  //     setIconSize(newSize);
-  //   };
-
-  //   handleResize();
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
   const handleLinkClick = (idLink: any) => {
     setActiveLink(idLink);
     setOpenMenu(false);

@@ -116,10 +116,8 @@ export default function Seccion4() {
             Contáctanos
           </h1>
           <p className="text-tWhite text-sm tablet:text-base text-center font-monse">
-            Explicaremos cómo podemos ayudar a tu comunidad, la forma en que
-            logramos mejorar la transparencia en el trabajo de la administración
-            y reducir los gastos comunes a través de nuestro sistema para
-            administrar edificios y condominios.
+            Explora el poder de la tecnología con FOS, convierte tu visión en
+            realidad
           </p>
           {error && <Error>{error}</Error>}
           <div className={`${error ? "mt-0" : "mt-4"}`}>

@@ -9,28 +9,31 @@ export default function Seccion1() {
       <Redondo />
       <div className="flex-row space-y-4 py-8">
         <Transition>
-          <h1 className="text-tWhite font-monse text-center text-2xl tablet:text-3xl desktopK:text-5xl font-bold px-16">
+          <h1 className="text-tWhite font-monse text-center text-xl tablet:text-3xl desktopK:text-5xl font-bold px-16">
             Desarrollo de software a tu medida
           </h1>
         </Transition>
         <Transition>
           <p className="text-tGrey font-monse text-center px-12 text-sm desktopK:text-lg">
-            Lorem ipsum dolor sit amet consectetur. Arcu leo arcu in nulla
-            aenean risus sem. Tristique volutpat eget sit adipiscing quam
-            pellentesque sed in.
+            Impulsamos la innovación a través de soluciones tecnológicas de
+            vanguardia, creando un futuro donde la excelencia y la eficiencia se
+            encuentran
           </p>
         </Transition>
         <Transition>
           <div className="w-full flex justify-center desktopK:my-12">
-            <button className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-3 px-8 text-tWhite font-medium font-monse ">
+            <a
+              href="/#contactanos"
+              className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-3 px-8 text-tWhite font-medium font-monse "
+            >
               Hablemos
-            </button>
+            </a>
           </div>
         </Transition>
       </div>
       <div className="flex-row space-y-4 ">
         <Transition>
-          <h1 className="text-tWhite text-center text-2xl tablet:text-3xl desktopK:text-5xl font-bold px-[50px] font-monse">
+          <h1 className="text-tWhite text-center text-xl tablet:text-3xl desktopK:text-5xl font-bold px-[50px] font-monse">
             Sé parte de la revolución tecnológica
           </h1>
         </Transition>
@@ -40,11 +43,11 @@ export default function Seccion1() {
             huella en el mundo
           </p>
         </Transition>
-        <div className="w-full flex justify-center ">
+        <div className="w-full flex justify-center  ">
           <Transition>
             <video
               controls
-              className="w-300 tablet:w-[600px] laptop:w[900px] desktopK:w-[1120px]"
+              className="w-300 tablet:w-[600px] laptop:w-[800px]  desktopK:w-[1120px]"
             ></video>
           </Transition>
         </div>

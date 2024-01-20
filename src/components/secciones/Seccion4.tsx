@@ -110,16 +110,14 @@ export default function Seccion4() {
   return (
     <div className="relative fullScreen" id="contactanos">
       <ToastContainer />
-      <div className="mx-[3%] pt-6 desktop:mx-[26%] ">
+      <div className="mx-[3%] absolute left-0 right-0 top-0 bottom-0 desktop:mx-[26%] flex justify-center items-center">
         <Transition>
-          <h1 className="text-center my-5 text-tWhite text-4xl font-bold font-monse">
+          <h1 className="text-center my-5 text-tWhite text-2xl tablet:text-4xl font-bold font-monse">
             Contáctanos
           </h1>
-          <p className="text-tWhite text-base text-center font-monse">
-            Explicaremos cómo podemos ayudar a tu comunidad, la forma en que
-            logramos mejorar la transparencia en el trabajo de la administración
-            y reducir los gastos comunes a través de nuestro sistema para
-            administrar edificios y condominios.
+          <p className="text-tWhite text-sm tablet:text-base text-center font-monse">
+            Explora el poder de la tecnología con FOS, convierte tu visión en
+            realidad
           </p>
           {error && <Error>{error}</Error>}
           <div className={`${error ? "mt-0" : "mt-4"}`}>

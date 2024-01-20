@@ -72,7 +72,7 @@ export default function Seccion2() {
               </div>
             </div>
           </div>
-          <div className="bg-tWhite mt-4 py-4 tablet:py-10 desktop:py-20">
+          <div className="bg-tWhite mt-4 py-4 tablet:py-10 desktop:py-12">
             <Transition>
               <h1 className="font-bold text-xl tablet:text-5xl text-center text-tBlack font-monse desktopK:pt-10">
                 Nuestros productos

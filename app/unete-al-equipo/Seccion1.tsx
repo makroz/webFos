@@ -2,7 +2,6 @@ import React from "react";
 import Blog from "@/public/blog.webp";
 import Image from "next/image";
 import { Transition } from "@/src/components/transition/Transition";
-import { Reveal } from "@/src/components/reveal/Reveal";
 
 export default function Seccion1() {
   return (

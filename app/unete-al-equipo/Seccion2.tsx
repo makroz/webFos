@@ -14,7 +14,7 @@ export default function Seccion2() {
         <div className="desktop:flex gap-4 ">
           <div className="flex justify-center items-center w-full">
             <Reveal>
-              <div className="bg-black-50 mb-4 py-8 desktop:h-[180px]  desktopK:h-52">
+              <div className="bg-black-50 mb-4 py-8 desktop:h-[185px]  desktopK:h-52">
                 <h1 className="text-tWhite text-center text-xl tablet:text-3xl laptop:text-2xl desktopK:text-5xl font-bold px-8 font-monse">
                   Reconocimiento
                 </h1>
@@ -27,7 +27,7 @@ export default function Seccion2() {
           </div>
           <div className="flex justify-center items-center w-full">
             <Reveal>
-              <div className="bg-black-50 mb-4 py-8 desktop:h-[180px] desktopK:h-52">
+              <div className="bg-black-50 mb-4 py-8 desktop:h-[185px] desktopK:h-52">
                 <h1 className="text-tWhite text-center text-xl  tablet:text-3xl laptop:text-2xl desktopK:text-5xl font-bold px-8 font-monse">
                   Proyección de carrera
                 </h1>
@@ -40,7 +40,7 @@ export default function Seccion2() {
           </div>
           <div className="flex justify-center items-center w-full">
             <Reveal>
-              <div className="bg-black-50 mb-4 py-8 desktop:h-[180px]  desktopK:h-52">
+              <div className="bg-black-50 mb-4 py-8 desktop:h-[185px]  desktopK:h-52">
                 <h1 className="text-tWhite text-center text-xl tablet:text-3xl laptop:text-2xl desktopK:text-5xl font-bold px-8 font-monse">
                   Cursos y formaciones
                 </h1>

@@ -116,7 +116,7 @@ export const Footer = () => {
           </div>
           <div className="flex items-end mb-7">
             <p className="text-tGrey font-monse font-light">
-              Copyright © 2023 FOS Technologies Inc. Todos los derechos
+              Copyright © 2023 FORCEONE SYSTEM TECHNOLOGIES S.R.L Todos los derechos
               reservados.
             </p>
           </div>

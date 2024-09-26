@@ -31,7 +31,6 @@ export default function Slide() {
         navigation={true}
         freeMode={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="w-full max-w-[1200px]"
       >
         {equipo.map(({ id, name, cargo, descrip, image }) => (
           <SwiperSlide

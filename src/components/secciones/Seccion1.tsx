@@ -1,5 +1,3 @@
-import Image from "next/image";
-import React from "react";
 import { Transition } from "../transition/Transition";
 import Redondo from "@/src/redondo/Redondo";
 import { Reveal } from "../reveal/Reveal";

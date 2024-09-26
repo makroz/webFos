@@ -1,6 +1,6 @@
 import Input from "@/src/ui/Input";
 import TextArea from "@/src/ui/TextArea";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Transition } from "../transition/Transition";
 import axios from "axios";
 import { Error } from "../error/Error";
@@ -110,8 +110,8 @@ export default function Seccion4() {
   return (
     <div className="relative fullScreen" id="contactanos">
       <ToastContainer />
-      <div className="mx-[3%] absolute left-0 right-0 top-0 bottom-0 desktop:mx-[26%] flex justify-center items-center">
-        <div className="containe">
+      <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center">
+        <div className="container">
           <Transition>
             <h1 className="text-center my-5 text-tWhite text-2xl tablet:text-4xl font-bold font-monse">
               Contáctanos

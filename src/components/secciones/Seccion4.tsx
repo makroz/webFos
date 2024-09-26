@@ -111,64 +111,66 @@ export default function Seccion4() {
     <div className="relative fullScreen" id="contactanos">
       <ToastContainer />
       <div className="mx-[3%] absolute left-0 right-0 top-0 bottom-0 desktop:mx-[26%] flex justify-center items-center">
-        <Transition>
-          <h1 className="text-center my-5 text-tWhite text-2xl tablet:text-4xl font-bold font-monse">
-            Contáctanos
-          </h1>
-          <p className="text-tWhite text-sm tablet:text-base text-center font-monse">
-            Explora el poder de la tecnología con FOS, convierte tu visión en
-            realidad
-          </p>
-          {error && <Error>{error}</Error>}
-          <div className={`${error ? "mt-0" : "mt-4"}`}>
-            <Input
-              name="name"
-              type="text"
-              placeholder="Nombre completo"
-              value={formState["name"]}
-              onChange={handleChangeInput}
-            />
-            <Input
-              name="email"
-              type="text"
-              placeholder="Correo electrónico"
-              value={formState["email"]}
-              onChange={handleChangeInput}
-            />
-            <Input
-              name="phone"
-              type="number"
-              placeholder="Celular"
-              value={formState["phone"]}
-              onChange={handleChangeInput}
-            />
-            <Input
-              name="condominium"
-              type="text"
-              placeholder="Rubro de tu empresa"
-              value={formState["condominium"]}
-              onChange={handleChangeInput}
-            />
-            <TextArea
-              name="message"
-              type="text"
-              placeholder="Cuéntanos de tu proyecto o necesidad"
-              value={formState["message"]}
-              onChange={handleChangeInput}
-            />
-            <button
-              onClick={() => save()}
-              disabled={loading}
-              className={`w-full py-2 ${
-                loading
-                  ? "bg-tGrey"
-                  : "bg-gradient-to-r from-custom-orange to-custom-purple"
-              } desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse`}
-            >
-              Enviar mensaje
-            </button>
-          </div>
-        </Transition>
+        <div className="containe">
+          <Transition>
+            <h1 className="text-center my-5 text-tWhite text-2xl tablet:text-4xl font-bold font-monse">
+              Contáctanos
+            </h1>
+            <p className="text-tWhite text-sm tablet:text-base text-center font-monse">
+              Explora el poder de la tecnología con FOS, convierte tu visión en
+              realidad
+            </p>
+            {error && <Error>{error}</Error>}
+            <div className={`${error ? "mt-0" : "mt-4"}`}>
+              <Input
+                name="name"
+                type="text"
+                placeholder="Nombre completo"
+                value={formState["name"]}
+                onChange={handleChangeInput}
+              />
+              <Input
+                name="email"
+                type="text"
+                placeholder="Correo electrónico"
+                value={formState["email"]}
+                onChange={handleChangeInput}
+              />
+              <Input
+                name="phone"
+                type="number"
+                placeholder="Celular"
+                value={formState["phone"]}
+                onChange={handleChangeInput}
+              />
+              <Input
+                name="condominium"
+                type="text"
+                placeholder="Rubro de tu empresa"
+                value={formState["condominium"]}
+                onChange={handleChangeInput}
+              />
+              <TextArea
+                name="message"
+                type="text"
+                placeholder="Cuéntanos de tu proyecto o necesidad"
+                value={formState["message"]}
+                onChange={handleChangeInput}
+              />
+              <button
+                onClick={() => save()}
+                disabled={loading}
+                className={`w-full py-2 ${
+                  loading
+                    ? "bg-tGrey"
+                    : "bg-gradient-to-r from-custom-orange to-custom-purple"
+                } desktopK:py-4 desktopK:text-xl text-tWhite text-base font-semibold font-monse`}
+              >
+                Enviar mensaje
+              </button>
+            </div>
+          </Transition>
+        </div>
       </div>
     </div>
   );

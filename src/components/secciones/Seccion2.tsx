@@ -1,19 +1,12 @@
-import {
-  IconCondaty,
-  IconDos,
-  IconTres,
-  IconUno,
-} from "@/src/icons/IconsLibrary";
-import React from "react";
-import { Reveal } from "../reveal/Reveal";
+import { IconCondaty, IconElekta } from "@/src/icons/IconsLibrary";
 import { Transition } from "../transition/Transition";
 
 export default function Seccion2() {
   return (
-    <div className="relative fullScreen" id="productos">
-      <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center">
-        <div className="w-full">
-          <div className="mx-4 space-y-4">
+    <div className="relative mb-40" id="productos">
+      {/* <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center"> */}
+      <div className="w-full ">
+        {/* <div className="mx-4 space-y-4">
             <Transition>
               <h1 className="text-tWhite text-center text-lg tablet:text-3xl desktopK:text-5xl font-bold px-8 font-monse">
                 Soluciones de desarrollo tecnológico
@@ -71,39 +64,64 @@ export default function Seccion2() {
                 </Reveal>
               </div>
             </div>
-          </div>
-          <div className="bg-tWhite mt-4 py-4 tablet:py-10 desktop:py-12">
+          </div> */}
+        <div className="flex justify-center">
+          <div className="container py-4   ">
             <Transition>
-              <h1 className="font-bold text-xl tablet:text-5xl text-center text-tBlack font-monse desktopK:pt-10">
+              <h1 className="font-bold text-xl tablet:text-5xl text-center text-tWhite font-monse">
                 Nuestros productos
               </h1>
-              <div className="tablet:flex justify-center items-center tablet:pt-6 ">
-                <div className="tablet:flex ">
-                  <div className="flex justify-center tablet:justify-end items-center tablet:w-1/2">
-                    <IconCondaty viewBox="0 0 252 168" size={200} />
+              <div className="desktop:flex desktop:mt-20">
+                <div className="tablet:flex justify-center items-center tablet:pt-6">
+                  <div className="tablet:flex ">
+                    <div className="flex justify-center tablet:justify-end items-center tablet:w-1/2">
+                      <IconCondaty viewBox="0 0 252 168" size={190} />,
+                    </div>
+                    <div className="px-10 tablet:flex justify-center items-center tablet:w-1/2">
+                      <div>
+                        <h1 className="font-bold text-xl tablet:text-4xl desktopK:text-5xl text-center tablet:text-left text-tWhite font-monse">
+                          Condaty
+                        </h1>
+                        <p className="text-center tablet:text-left font-semibold text-sm tablet:py-2 text-tGrey desktopK:text-base font-monse ">
+                          Software para la gestión de condominios y edificios
+                        </p>
+                        <div className="flex justify-center tablet:justify-start items-center my-2">
+                          <a
+                            href="https://www.condaty.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-2 px-6 text-tWhite font-medium font-monse "
+                          >
+                            Conoce Condaty
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="px-10 tablet:flex justify-center items-center tablet:w-1/2">
-                    <div>
-                      <h1 className="font-bold text-xl tablet:text-4xl desktopK:text-5xl text-center tablet:text-left text-tBlack font-monse">
-                        Condaty
-                      </h1>
-                      <p className="text-center tablet:text-left font-bold text-sm tablet:py-2 text-tBlack tablet:text-tGrey desktopK:text-lg font-monse ">
-                        Software de gestión de condominios y edificios
-                      </p>
-                      <p className="text-center tablet:text-left text-tGrey text-xs">
-                        Simplificamos la administración, mejoramos la seguridad
-                        y fortalecemos la comunidad, todo en una plataforma
-                        intuitiva y eficiente
-                      </p>
-                      <div className="flex justify-center tablet:justify-start items-center my-2">
-                        <a
-                          href="https://www.condaty.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-2 px-6 text-tWhite font-medium font-monse "
-                        >
-                          Conoce Condaty
-                        </a>
+                </div>
+                <div className="tablet:flex justify-center items-center tablet:pt-6">
+                  <div className="tablet:flex ">
+                    <div className="flex justify-center tablet:justify-end items-center tablet:w-1/2">
+                      <IconElekta size={200} />
+                    </div>
+                    <div className="px-10 tablet:flex justify-center items-center tablet:w-1/2">
+                      <div>
+                        <h1 className="font-bold text-xl tablet:text-4xl desktopK:text-5xl text-center tablet:text-left text-tWhite font-monse">
+                          Elekta
+                        </h1>
+                        <p className="text-center tablet:text-left font-semibold text-sm tablet:py-2 text-tGrey desktopK:text-base font-monse ">
+                          La plataforma para gestión política
+                        </p>
+                        <div className="flex justify-center tablet:justify-start items-center my-2">
+                          <a
+                            href="https://www.elekta.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gradient-to-r from-[#F25749] to-[#5945A7] py-2 px-6 text-tWhite font-medium font-monse "
+                          >
+                            Conoce Elekta
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -113,6 +131,7 @@ export default function Seccion2() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }

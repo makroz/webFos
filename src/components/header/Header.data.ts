@@ -9,11 +9,11 @@ export const dataHeader = [
     name: "Conócenos",
     idLink: "/#conocenos",
   },
-  {
-    id: 3,
-    name: "Blog",
-    idLink: "/blog",
-  },
+  // {
+  //   id: 3,
+  //   name: "Blog",
+  //   idLink: "/blog",
+  // },
   {
     id: 4,
     name: "Contáctanos",

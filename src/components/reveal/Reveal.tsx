@@ -3,7 +3,7 @@
 import { useAnimation, useInView, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-export function Reveal({ children }: any) {
+export function Reveal({ children, className }: any) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const mainControls = useAnimation();
@@ -15,7 +15,7 @@ export function Reveal({ children }: any) {
     }
   }, [isInView]);
   return (
-    <div ref={ref} className="relative overflow-hidden w-fit">
+    <div ref={ref} className={`relative overflow-hidden ` + className}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

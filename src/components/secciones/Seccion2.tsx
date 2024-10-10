@@ -5,7 +5,7 @@ export default function Seccion2() {
   return (
     <div className="relative mb-40" id="productos">
       {/* <div className="absolute left-0 right-0 top-0 bottom-0 flex justify-center items-center"> */}
-      <div className="w-full ">
+      <div className="w-full flex justify-center">
         <div className="flex justify-center">
           <div className="container py-4">
             <Transition>
@@ -40,7 +40,7 @@ export default function Seccion2() {
                     </div>
                   </div>
                 </div>
-                <div className="tablet:flex justify-center items-center tablet:pt-6">
+                {/* <div className="tablet:flex justify-center items-center tablet:pt-6">
                   <div className="tablet:flex ">
                     <div className="flex justify-center tablet:justify-end items-center tablet:w-1/2">
                       <IconElekta size={200} />
@@ -66,7 +66,7 @@ export default function Seccion2() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Transition>
           </div>
